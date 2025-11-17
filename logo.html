@@ -1,0 +1,85 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masai Hiring Partners</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .partners-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px; 
+            padding: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            border: 1px solid #ddd;
+            background-color: white;
+        }
+
+        .logo-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 50px;
+            padding: 10px;
+            border: 1px solid #eee;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            box-sizing: border-box;
+            background-color: #fff;
+        }
+
+        .logo-item img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            filter: grayscale(100%);
+            transition: filter 0.3s;
+        }
+
+        .logo-item:hover img {
+            filter: grayscale(0%);
+        }
+
+        /* Combinator Example: Select all direct children (logo-item) that are not the first two rows (8 items) */
+        .partners-container > .logo-item:nth-child(n+9) {
+            opacity: 0.6;
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <div class="partners-container">
+        <div class="logo-item"><img src="https://assets.masaischool.com/learning-partners/logo-img-2.svg" alt="DE SHAW & CO"></div>
+        <div class="logo-item"><img src="https://assets.masaischool.com/learning-partners/logo-img-11.svg" alt="JP MORGAN CHASE"></div>
+        <div class="logo-item"><img src="https://assets.masaischool.com/learning-partners/logo-img-4.svg" alt="CRED"></div>
+        <div class="logo-item"><img src="https://assets.masaischool.com/learning-partners/logo-img-12.svg" alt="PAYTM"></div>
+        
+        <div class="logo-item"><img src="https://assets.masaischool.com/learning-partners/logo-img-17.svg" alt="NOBROKER"></div>
+        <div class="logo-item"><img src="https://assets.masaischool.com/learning-partners/logo-img-20.svg" alt="SHARECHAT"></div>
+        <div class="logo-item"><img src="https://assets.masaischool.com/learning-partners/logo-img-21.svg" alt="GOPAY"></div>
+        <div class="logo-item"><img src="https://assets.masaischool.com/learning-partners/logo-img-1.svg" alt="UNACADEMY"></div>
+
+        <div class="logo-item"><img src="https://assets.masaischool.com/learning-partners/logo-img-22.svg" alt="MCKINSEY"></div>
+        <div class="logo-item"><img src="https://assets.masaischool.com/learning-partners/logo-img-23.svg" alt="BYJUS"></div>
+        <div class="logo-item"><img src="https://assets.masaischool.com/learning-partners/logo-img-24.svg" alt="KREDITBEE"></div>
+        <div class="logo-item"><img src="https://assets.masaischool.com/learning-partners/logo-img-18.svg" alt="KOLLEGE"></div>
+        <div class="logo-item"><img src="https://assets.masaischool.com/learning-partners/logo-img-19.svg" alt="INDIA GOLD"></div>
+        <div class="logo-item"><img src="https://assets.masaischool.com/learning-partners/logo-img-25.svg" alt="AJIO"></div>
+        <div class="logo-item"><img src="https://assets.masaischool.com/learning-partners/logo-img-26.svg" alt="AIRTEL"></div>
+        <div class="logo-item"><img src="https://assets.masaischool.com/learning-partners/logo-img-27.svg" alt="CUREFIT"></div>
+        <div class="logo-item"><img src="https://assets.masaischool.com/learning-partners/logo-img-28.svg" alt="DELHIVERY"></div>
+        <div class="logo-item"><img src="https://assets.masaischool.com/learning-partners/logo-img-29.svg" alt="ZOMATO"></div>
+        <div class="logo-item"><img src="https://assets.masaischool.com/learning-partners/logo-img-30.svg" alt="FLIPKART"></div>
+        <div class="logo-item"><img src="https://assets.masaischool.com/learning-partners/logo-img-31.svg" alt="AMAZON"></div>
+    </div>
+</body>
+</html>
