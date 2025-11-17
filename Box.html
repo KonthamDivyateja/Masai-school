@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        .card-container {
+            width: 300px;
+            height: 400px;
+            padding: 20px;
+            margin: auto;
+            border: 2px solid black;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-sizing: border-box; /* Ensures padding/border are inside width/height */
+        }
+        
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            object-fit: cover;
+        }
+
+        .profile-details h2 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .profile-details p {
+            margin: 5px 0 15px 0;
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .box {
+            margin: 5px 0;
+            padding: 10px;
+            width: 90%;
+            border: 1px solid #ccc;
+            text-align: center;
+            background-color: #f8f8f8;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <img class="profile-image" src="https://via.placeholder.com/150" alt="Profile Image">
+        <div class="profile-details">
+            <h2>Profile Name</h2>
+            <p>A short description of the profile user.</p>
+        </div>
+
+        <div class="box">Highest & Average CTC</div>
+        <div class="box">Expected Increase in Salary Potential: 60%</div>
+        <div class="box">Average CTC</div>
+    </div>
+</body>
+</html>
