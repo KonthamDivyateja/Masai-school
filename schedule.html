@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Schedule</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .schedule-title {
+            font-size: 2.5em;
+            font-family: 'Brush Script MT', cursive;
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 80px repeat(5, 1fr);
+            grid-template-rows: 40px repeat(9, 60px) 40px;
+            gap: 1px;
+            width: 80%;
+            max-width: 900px;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            text-align: center;
+            font-size: 0.9em;
+            border-right: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .header-day {
+            background-color: #fff;
+            font-weight: bold;
+            color: #444;
+            border-top: 1px solid #ccc;
+        }
+
+        .header-time {
+            background-color: #4169e1;
+            color: white;
+            font-weight: bold;
+        }
+
+        .grid-item:nth-child(1) {
+            background-color: #fff;
+            border-top: 1px solid #ccc;
+        }
+
+        .grid-item:nth-child(n+7):nth-child(-n+55) { 
+            border-top: none;
+        }
+        
+        .grid-item:nth-child(6n + 2), 
+        .grid-item:nth-child(6n + 4), 
+        .grid-item:nth-child(6n + 6) {
+            background-color: #f7b2c9;
+        }
+        
+        .grid-item:nth-child(6n + 3), 
+        .grid-item:nth-child(6n + 5) {
+            background-color: #f9e0a2;
+        }
+
+        .note-area {
+            grid-column: 1 / span 6;
+            text-align: left;
+            padding: 10px;
+            background-color: #ccf2f4;
+            color: #333;
+            font-size: 1em;
+            justify-content: flex-start;
+            border: none;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .grid-item:nth-child(6n) {
+            border-right: none;
+        }
+
+        .grid-item:nth-child(n+50):nth-child(-n+54) {
+             border-bottom: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <div class="schedule-title">Weekly schedule</div>
+        <div class="grid-container">
+            <div class="grid-item"></div>
+            <div class="grid-item header-day">Monday</div>
+            <div class="grid-item header-day">Tuesday</div>
+            <div class="grid-item header-day">Wednesday</div>
+            <div class="grid-item header-day">Thursday</div>
+            <div class="grid-item header-day">Friday</div>
+
+            <div class="grid-item header-time">08:00</div>
+            <div class="grid-item">Maths</div>
+            <div class="grid-item">Science</div>
+            <div class="grid-item">English</div>
+            <div class="grid-item">PT</div>
+            <div class="grid-item">GK</div>
+            
+            <div class="grid-item header-time">09:00</div>
+            <div class="grid-item">Science</div>
+            <div class="grid-item">Maths</div>
+            <div class="grid-item">History</div>
+            <div class="grid-item">Art</div>
+            <div class="grid-item">Break</div>
+            
+            <div class="grid-item header-time">10:00</div>
+            <div class="grid-item">English</div>
+            <div class="grid-item">History</div>
+            <div class="grid-item">Science</div>
+            <div class="grid-item">Music</div>
+            <div class="grid-item">Maths</div>
+
+            <div class="grid-item header-time">11:00</div>
+            <div class="grid-item">Break</div>
+            <div class="grid-item">English</div>
+            <div class="grid-item">Maths</div>
+            <div class="grid-item">Science</div>
+            <div class="grid-item">History</div>
+
+            <div class="grid-item header-time">12:00</div>
+            <div class="grid-item">History</div>
+            <div class="grid-item">PT</div>
+            <div class="grid-item">English</div>
+            <div class="grid-item">Maths</div>
+            <div class="grid-item">Science</div>
+
+            <div class="grid-item header-time">13:00</div>
+            <div class="grid-item">Lunch</div>
+            <div class="grid-item">Lunch</div>
+            <div class="grid-item">Lunch</div>
+            <div class="grid-item">Lunch</div>
+            <div class="grid-item">Lunch</div>
+
+            <div class="grid-item header-time">14:00</div>
+            <div class="grid-item">Maths</div>
+            <div class="grid-item">GK</div>
+            <div class="grid-item">Science</div>
+            <div class="grid-item">English</div>
+            <div class="grid-item">PT</div>
+
+            <div class="grid-item header-time">15:00</div>
+            <div class="grid-item">Art</div>
+            <div class="grid-item">History</div>
+            <div class="grid-item">PT</div>
+            <div class="grid-item">Music</div>
+            <div class="grid-item">Maths</div>
+
+            <div class="grid-item header-time">16:00</div>
+            <div class="grid-item">GK</div>
+            <div class="grid-item">English</div>
+            <div class="grid-item">Maths</div>
+            <div class="grid-item">History</div>
+            <div class="grid-item">Science</div>
+
+            <div class="grid-item note-area">Note: Ensure all assignments are completed before 17:00 HRS.</div>
+        </div>
+    </div>
+</body>
+</html>
