@@ -1,0 +1,19 @@
+let age = 25;
+
+function displayAge() {
+    console.log(`displayAge: The current age is ${age}`);
+}
+
+function changeAge(newAge) {
+    console.log(`changeAge: Updating global age from ${age} to ${newAge}`);
+    age = newAge;
+    console.log(`changeAge: Global age is now updated to ${age}`);
+}
+
+console.log("--- Initial State ---");
+displayAge(); 
+
+console.log("--- Changing Global Variable from Function Context ---");
+changeAge(30);
+
+displayAge();
